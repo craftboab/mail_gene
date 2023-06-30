@@ -48,7 +48,7 @@ def generate_email(content):
 
 def send_email(to, subject, body):
     sg = SendGridAPIClient(api_key=SENDGRID_API_KEY)
-    mail = Mail(from_email="test@example.com", to_emails=to, subject=subject, plain_text_content=body)
+    mail = Mail(from_email="kenta.u611@gmail.com", to_emails=to, subject=subject, plain_text_content=body)
     response = sg.send(mail)
     return response
 
